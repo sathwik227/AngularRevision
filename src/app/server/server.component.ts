@@ -9,10 +9,17 @@ export class ServerComponent implements OnInit {
 
   serverId: any = 10;
   serverName: any = 'India';
+  addNewServer: any = false;
+
   getServerName() {
    return this.serverName;
   }
-  constructor() { }
+
+  constructor() {
+    setTimeout(() => {
+      this.addNewServer = true;
+    }, 2000);
+  }
 
   ngOnInit() {
   }
