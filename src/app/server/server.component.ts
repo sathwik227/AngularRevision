@@ -10,6 +10,7 @@ export class ServerComponent implements OnInit {
   serverId: any = 10;
   serverName: any = 'India';
   addNewServer: any = false;
+  serverCreated: any = 'No server was created';
 
   getServerName() {
    return this.serverName;
@@ -22,6 +23,10 @@ export class ServerComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  onServerCreated() {
+  return this.serverCreated = 'server was created';
   }
 
 }

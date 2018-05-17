@@ -1,2 +1,11 @@
-<button class="btn btn-primary" [disabled]="!addNewServer">Add Server</button>
-<p>{{'The server'}} has a server ID number {{serverId}} and server name {{serverName}}</p>
+
+  <div class="float-xl-left"><button class="btn btn-primary" [disabled]="!addNewServer"
+  (click)="onServerCreated()">Add Server</button></div><br><br>
+  <p class="float-xl-left">{{serverCreated}}</p><br><br>
+
+
+  <!-- <p [innerText]="addNewServer"></p> -->
+
+
+  <p class="float-xl-left">{{'The server'}} has a server ID number {{serverId}} and server name {{serverName}}</p>
+
